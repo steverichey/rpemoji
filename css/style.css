@@ -1,0 +1,27 @@
+body {
+	background: #222;
+    color: #101010;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.gui {
+    background: #eee;
+}
+
+.emojrpg {
+    
+}
+
+table {
+    background: #eee;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
