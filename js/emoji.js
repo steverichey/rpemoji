@@ -1,4 +1,5 @@
 var EMOJI = EMOJI || {
+    GRASS  : "🌾",
     TREE   : "🌲",
 	FACE   : "😄",
     DRAGON : "🐲",

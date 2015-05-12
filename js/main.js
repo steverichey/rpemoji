@@ -52,7 +52,7 @@ var redraw = function() {
             } else if (dragon.x === x && dragon.y === y) {
                 cell.innerHTML = dragon.icon;
             } else {
-                cell.innerHTML = EMOJI.TREE;
+                cell.innerHTML = WORLD.get(x, y);
             }
 
             row.appendChild(cell);
