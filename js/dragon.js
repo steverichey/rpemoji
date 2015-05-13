@@ -1,6 +1,6 @@
-/* global EMOJI, RAND */
+/* global EMOJI, RAND, GAME */
 
-var dragon = dragon || {
+var DRAGON = DRAGON || {
     icon: EMOJI.DRAGON, 
     x: 15, 
     y: 15,
@@ -8,17 +8,33 @@ var dragon = dragon || {
         if (RAND.bool()) {
             if (RAND.bool()) {
                 if (RAND.bool()) {
-                    dragon.x++;
+                    this.x++;
                 } else {
-                    dragon.x--;
+                    this.x--;
                 }
             } else {
                 if (RAND.bool()) {
-                    dragon.y++;
+                    this.y++;
                 } else {
-                    dragon.y--;
+                    this.y--;
                 }
             }
+        }
+        
+        if (this.x > GAME.WIDTH) {
+            this.x = GAME.WIDTH;
+        }
+        
+        if (this.x < 0) {
+            this.x = 0;
+        }
+        
+        if (this.y > GAME.HEIGHT) {
+            this.y = GAME.HEIGHT;
+        }
+        
+        if (this.y < 0) {
+            this.y = 0;
         }
     }
 };

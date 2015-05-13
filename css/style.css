@@ -13,10 +13,8 @@ body {
 
 .gui {
     background: #eee;
-}
-
-.emojrpg {
-    
+    margin-bottom: 12px;
+    width: 600px;
 }
 
 table {
@@ -24,4 +22,10 @@ table {
     border: none;
     margin: 0;
     padding: 0;
+}
+
+td {
+    height: 26px;
+    padding: 0;
+    width: 26px;
 }

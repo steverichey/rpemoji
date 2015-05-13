@@ -1,4 +1,4 @@
-/* global EMOJI, INPUT, GAME */
+/* global EMOJI, INPUT, GAME, WORLD */
 
 var PLAYER = PLAYER || {
     icon: EMOJI.FACE, 
@@ -10,7 +10,7 @@ var PLAYER = PLAYER || {
             PLAYER.x--;
         }
 
-        if (INPUT.RIGHT && PLAYER.x < GAME.WIDTH - 1) {
+        if (INPUT.RIGHT && PLAYER.x < WORLD.WIDTH - 1) {
             PLAYER.x++;
         }
 
@@ -18,7 +18,7 @@ var PLAYER = PLAYER || {
             PLAYER.y--;
         }
 
-        if (INPUT.DOWN && PLAYER.y < GAME.HEIGHT - 1) {
+        if (INPUT.DOWN && PLAYER.y < WORLD.HEIGHT - 1) {
             PLAYER.y++;
         }
     }
